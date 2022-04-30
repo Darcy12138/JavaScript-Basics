@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // js 是编程语言有很强的逻辑性在里面： 实现这个要求的思路 先怎么做后怎么做 
+        // 1. 我们需要一个临时变量帮我们
+        // 2. 把apple1 给我们的临时变量 temp 
+        // 3. 把apple2 里面的苹果给 apple1 
+        // 4. 把临时变量里面的值 给 apple2 
+        var temp; // 声明了一个临时变量为空
+        var zh_name = '张翔';
+        var en_name = 'darcy';
+
+
+        temp = zh_name;
+        zh_name = en_name;
+        en_name = temp;
+        alert(zh_name);
+        alert(en_name);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
