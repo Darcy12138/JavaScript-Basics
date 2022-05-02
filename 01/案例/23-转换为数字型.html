@@ -7,49 +7,36 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script>
-        // var age = prompt('请输入您的年龄');
-        // 1. parseInt(变量)  可以把 字符型的转换为数字型 得到是整数
-        // // console.log(parseInt(age));
-        // console.log(parseInt('3.14')); // 3 取整
-        // console.log(parseInt('3.94')); // 3 取整
-        // console.log(parseInt('120px')); // 120 会去到这个px单位
-        // console.log(parseInt('rem120px')); // NaN
+        // let age = prompt('输入你的年龄');
+        // 1. parseInt(变量) 可以把字符型转换为数字型 得到的是整数
+        // console.log(parseInt(age));
+        console.log(parseInt('3.91')); //取整
+        console.log(parseInt('3.91rem'));
+        console.log(parseInt('3.91px')); //3.91 会去掉px等单位
 
-        // // 2. parseFloat(变量) 可以把 字符型的转换为数字型 得到是小数 浮点数
-        // console.log(parseFloat('3.14')); // 3.14
-        // console.log(parseFloat('120px')); // 120 会去掉这个px单位
-        // console.log(parseFloat('rem120px')); // NaN
+        console.log(parseInt('rem120')); //NaN
 
 
-        // var str = 'px111.111'
-
-        // // console.log(parseInt(str))   // NaNs
-
-        // console.log(parseFloat(str))
+        // 2. parseFloat()同上
+        console.log(parseFloat('3.14'));
 
 
 
+        num1 = prompt('请输入工资');
+        let num2 = prompt('请输入绩效');
+        num1 = parseInt(num1)
+        num2 = parseInt(num2)
+        alert(num1 + num2);
 
+        // 3. 利用Number转换
+        let str = '1234'
+        console.log(Number(str));
+        console.log(isNaN(str));
+        console.log(Number('12'));
 
-
-
-
-
-        // 3. 利用 Number(变量) 
-        // var str = '123';
-        // console.log(Number(str));
-        // console.log(Number('12'));
-        
-        // // 4. 利用了算数运算 -  *  /  隐式转换
-        // console.log('12' - 0); // 12
-        // console.log('123' - '120');
-        // console.log('123' * 1);
-
-        var str = '123'
-
-        // Number(str)
+        // 4. 隐式转换,利用-,*,/转换
     </script>
-</head>
+</head>hh
 
 <body>
 
