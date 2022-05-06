@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var rest = 100
+
+        do {
+            var handler = prompt(
+                    '请选择您的操作:\n1. 存款\n2. 取款\n3. 查看余额\n4. 退出',
+                )
+                // if (handler === '4') {
+                //   break
+                // }
+            switch (handler) {
+                case '1':
+                    var money = Number(prompt('请输入您的存款金额'))
+                    rest += money
+                    break // 这里的break只会退出switch语句，不会退出while循环
+                case '2':
+                    var money = Number(prompt('请输入您的取款金额'))
+                    if (rest < money) {
+                        alert('余额不足，要努力挣钱奥！')
+                    } else {
+                        rest -= money
+                    }
+                    break
+                case '3':
+                    alert(rest)
+                    break
+            }
+        } while (handler !== '4')
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

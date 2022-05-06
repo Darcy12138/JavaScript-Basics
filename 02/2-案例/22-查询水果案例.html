@@ -12,17 +12,19 @@
         // case 后面的值写几个不同的水果名称，注意一定要加引号 ，因为必须是全等匹配。
         // 弹出不同价格即可。同样注意每个 case 之后加上 break ，以便退出 switch 语句。
         // 将 default 设置为没有此水果。
-        var fruit = prompt('请您输入查询的水果:');
-        
-        switch (fruit) {
-            case '苹果':
-                alert('苹果的价格是 3.5/斤');
+        let college = prompt('请输入大学的名字')
+        switch (college) {
+            case '清华大学':
+                alert('985');
                 break;
-            case '榴莲':
-                alert('榴莲的价格是 35/斤');
+            case '暨南大学':
+                alert('211');
+                break;
+            case '安庆师范大学':
+                alert('双非一本');
                 break;
             default:
-                alert('没有此水果');
+                alert('暂无数据');
         }
     </script>
 </head>

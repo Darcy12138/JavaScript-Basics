@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // let date = parseInt(prompt('请输入日期'))
+        // if (date < 1 || date > 31) {
+        //     alert('请重新输入日期')
+        // } else if (date % 7 == 0) {
+        //     alert('今天是周二')
+        // } else if (date % 7 == 1) {
+        //     alert('今天是周三')
+        // } else if (date % 7 == 2) {
+        //     alert('今天是周四')
+        // } else if (date % 7 == 3) {
+        //     alert('今天是周五')
+        // } else if (date % 7 == 4) {
+        //     alert('今天是周六')
+        // } else if (date % 7 == 5) {
+        //     alert('今天是周日')
+        // } else if (date % 7 == 6) {
+        //     alert('今天是周一')
+        // }
+
+
+
+
+
+        let date = parseInt(prompt('请输入日期'))
+        if (date < 1 || date > 31) {
+            alert('请重新输入日期')
+        } else if ((date + 2) % 7 != 0) {
+            alert('今天是周' + (date + 2) % 7)
+        } else {
+            alert('今天是周日')
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

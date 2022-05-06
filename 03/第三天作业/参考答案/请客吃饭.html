@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body></body>
+  <script>
+    var money = Number(prompt('班长口袋里的钱'));
+    // 判断
+    if (money >= 2000) {
+      console.log('请大家吃西餐');
+    } else if (money >= 1500) {
+      // 注意：这里就不需要判断money是否小于2000
+      console.log('请大家吃快餐');
+    } else if (money >= 1000) {
+      console.log('请大家喝饮料');
+    } else if (money >= 500) {
+      console.log('请大家吃棒棒糖');
+    } else {
+      console.log('下次把钱带够');
+    }
+  </script>
+</html>

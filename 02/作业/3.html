@@ -9,7 +9,9 @@
     <script>
         let num = parseInt(prompt('请输入一个数')),
             num1 = parseInt(num % 10),
-            num2 = parseInt(num / 10 % 10),
+            // num2 = parseInt(num / 10 % 10),
+            // num2 = parseInt((num % 100) / 10),
+            num2 = (num - num1) / 10 % 10,
             num3 = parseInt(num / 100);
         alert('这个数的个位是' + num1 + '十位数字是' + num2 + '百位数字是' + num3)
     </script>
