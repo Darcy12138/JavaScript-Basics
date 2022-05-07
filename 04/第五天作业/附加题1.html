@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let arr = [4, 2, 5, 3, 1] //声明一个数组
+        let tem //交换变量
+        for (let i = 0; i < arr.length - 1; i++) { //要循环 4 次才可以对5个数进行排序
+            for (let j = 0; j < arr.length; j++) { //比较 4,3,2,1次
+                if (arr[j] > arr[j + 1]) {
+                    tem = arr[j + 1] //交换变量
+                    arr[j + 1] = arr[j]
+                    arr[j] = tem
+                }
+
+            }
+        }
+        console.log(arr);
+
+        let arr1 = [4, 2, 5, 3, 1]
+        let tem1
+        for (let i = 0; i < arr1.length - 1; i++) {
+            for (let j = 0; j < arr1.length; j++) {
+                if (arr1[j] < arr1[j + 1]) {
+                    tem = arr1[j + 1]
+                    arr1[j + 1] = arr1[j]
+                    arr1[j] = tem
+                }
+
+            }
+        }
+        console.log(arr1);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

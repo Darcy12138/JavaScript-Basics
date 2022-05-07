@@ -13,17 +13,14 @@
         // 遍历这个数组，把里面每个数组元素和 max 相比较。
         // 如果这个数组元素大于max 就把这个数组元素存到 max 里面，否则继续下一轮比较。
         // 最后输出这个 max
-
-        var arr = [2, 6, 1, 77, 52, 25, 7, 99, 0];
-        
-        var max = arr[0];
-        for (var i = 1; i < arr.length; i++) {
+        let arr = [321, 543, 56, 234, 56, 4, 35, 53, 2, 35, 5, 5, 3]
+        let max = arr[0]
+        for (i = 0; i < arr.length; i++) {
             if (arr[i] > max) {
-                max = arr[i];
+                max = arr[i]
             }
         }
-        console.log('该数组里面的最大值是：' + max);
-
+        console.log(max);
     </script>
 </head>
 

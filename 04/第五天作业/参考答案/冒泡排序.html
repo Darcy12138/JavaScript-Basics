@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      var arr = [4, 2, 5, 3, 1]
+      // 目标：[1,2,3,4,5] 或 [5,4,3,2,1]
+      // 实现：[1,2,3,4,5]   从小到大
+
+      // 使用这种方法，比较一趟，一定会将最大的数字放到最后面
+
+      // 外层for循环表示比较的趟数
+      for (var i = 1; i < arr.length; i++) {
+        // 里层for循环在真正比较
+        // 短期目标：第一趟里层for循环4次
+        // 短期目标：第二趟里层for循环3次
+        // 短期目标：第三趟里层for循环2次
+        // 短期目标：第四趟里层for循环1次
+        for (var j = 0; j < arr.length - i; j++) {
+          if (arr[j] > arr[j + 1]) {
+            // 交互位置
+            var temp = arr[j]
+            arr[j] = arr[j + 1]
+            arr[j + 1] = temp
+          }
+        }
+      }
+      console.log(arr)
+    </script>
+  </head>
+
+  <body></body>
+</html>

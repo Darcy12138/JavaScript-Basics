@@ -8,23 +8,30 @@
     <title>Document</title>
     <script>
         // 1. 新增数组元素 修改length长度 
-        var arr = ['red', 'green', 'blue'];
+        let arr = ['red', 'green', 'blue', 'pink']
         console.log(arr.length);
-        arr.length = 5; // 把我们数组的长度修改为了 5  里面应该有5个元素 
+        arr.length = 8 //把数组的长度修改为了 5 里面应该有5个元素
         console.log(arr);
-        console.log(arr[3]); // undefined
-        console.log(arr[4]); // undefined
+        console.log(arr[6]); //undefined
+        console.log(arr[7]); //undefined
 
         // 2. 新增数组元素 修改索引号 追加数组元素
-        var arr1 = ['red', 'green', 'blue'];
-        arr1[3] = 'pink';
+        let arr1 = ['red', 'green', 'blue', 'pink']
+        arr1[4] = 'teal' //添加新的元素
         console.log(arr1);
-        arr1[4] = 'hotpink';
+        arr1[1] = 'black' //替换原有的元素
         console.log(arr1);
-        arr1[0] = 'yellow'; // 这里是替换原来的数组元素
+
+        //不要直接给数组名赋值,否则里面的元素都会消失
+        arr1 = '原来的数组消失'
         console.log(arr1);
-        arr1 = '有点意思';
-        console.log(arr1); // 不要直接给 数组名赋值 否则里面的数组元素都没有了
+
+        //length 是动态获取 实时获取
+        let arr2 = ['red', 'green', 'blue', 'pink']
+        arr2[arr2.length] = 'skyblue'
+        console.log(arr2);
+        arr2[arr2.length] = 'blackgreen'
+        console.log(arr2);
     </script>
 </head>
 
