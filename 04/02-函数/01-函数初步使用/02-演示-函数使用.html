@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
     <title>Document</title>
     <style></style>
-  </head>
-  <body></body>
-  <script>
-    // 第一步：定义函数 ----------------------------------------
+</head>
 
-    // 第二步：使用函数 ----------------------------------------
+<body></body>
+<script>
+    // 第一步：定义函数 ----------------------------------------
+    function getSum() {
+        let a = 1
+        let b = 2
+        console.log(a + b);
+    }
+
+
+    let sayHi = function() {
+            console.log('嗨！');
+        }
+        // 第二步：使用函数 ----------------------------------------
+
+    getSum()
+    sayHi()
+
 
     /* 细节：******************************************************
       1. 声明函数后函数不会自己执行，只有调用它时才会执行，调用几次执行几次
@@ -23,5 +35,6 @@
         1. 声明函数的本质：把一段代码用{}包起来，再给它起个名字存起来
         2. 调用函数的本质：浏览器根据函数名找到对应的代码块，然后把函数{}里的代码从头到尾执行一遍
     */
-  </script>
+</script>
+
 </html>
