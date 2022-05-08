@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(num1, num2) {
+            let sum = num1 + num2
+            alert('运算的结果为：' + sum)
+        }
+
+        function minus(num1, num2) {
+            let sum = num1 - num2
+            alert('运算的结果为：' + sum)
+        }
+
+        function mul(num1, num2) {
+            let sum = num1 * num2
+            alert('运算的结果为：' + sum)
+        }
+
+        function div(num1, num2) {
+            let sum = num1 / num2
+            alert('运算的结果为：' + sum)
+        }
+
+
+        do {
+            var num = Number(prompt('欢迎使用简易计算器：\n' + '1.加法运算：\n' + '2.减法运算：\n' + '3.乘法运算：\n' + '4.除法运算：\n' + '5.退出：\n' + '请输入您的选项：\n'))
+            var fig1
+            var fig2
+
+            switch (num) {
+                case 1:
+                    fig1 = Number(prompt('请输入第一个数字：'))
+                    fig2 = Number(prompt('请输入第二个数字：'))
+                    add(fig1, fig2)
+                    break
+                case 2:
+                    fig1 = Number(prompt('请输入第一个数字：'))
+                    fig2 = Number(prompt('请输入第二个数字：'))
+                    minus(fig1, fig2)
+                    break
+                case 3:
+                    fig1 = Number(prompt('请输入第一个数字：'))
+                    fig2 = Number(prompt('请输入第二个数字：'))
+                    mul(fig1, fig2)
+                    break
+                case 4:
+                    fig1 = Number(prompt('请输入第一个数字：'))
+                    fig2 = Number(prompt('请输入第二个数字：'))
+                    div(fig1, fig2)
+                    break
+            }
+        } while (num !== 5);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

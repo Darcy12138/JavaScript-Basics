@@ -9,19 +9,19 @@
     <script>
         // 利用函数冒泡排序 sort 排序
         function sort(arr) {
-            for (var i = 0; i < arr.length - 1; i++) {
-                for (var j = 0; j < arr.length - i - 1; j++) {
+            for (var i = 0; i < arr.length; i++) {
+                for (var j = 0; j < arr.length - 1; j++) {
                     if (arr[j] > arr[j + 1]) {
-                        var temp = arr[j];
-                        arr[j] = arr[j + 1];
-                        arr[j + 1] = temp;
+                        var temp = arr[j]
+                        arr[j] = arr[j + 1]
+                        arr[j + 1] = temp
                     }
                 }
             }
-            return arr;
+            return arr
         }
-        
-        var arr1 = sort([1, 4, 2, 9]);
+
+        var arr1 = sort([9, 4, 2, 1]);
         console.log(arr1);
         var arr2 = sort([11, 7, 22, 999]);
         console.log(arr2);

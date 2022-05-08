@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function turnArr([num1, num2, num3, num4, num5, num6, num7, num8]) {
+            let arr1 = [num1, num2, num3, num4, num5, num6, num7, num8]
+            let arr2 = []
+            let max = [0]
+            for (let i = 1; i < arr1.length; i++) {
+                if (arr1[i] > max) {
+                    max = arr1[i]
+                }
+            }
+            console.log(max);
+            for (let i = arr1.length - 1; i >= 0; i--) {
+                arr2[arr2.length] = arr1[i]
+            }
+            return arr2
+        }
+        console.log(turnArr([45, 23, 56, 7, 34, 27, 67, 54]));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
